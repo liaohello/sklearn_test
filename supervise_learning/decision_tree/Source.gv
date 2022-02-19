@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="proline <= 760.0\ngini = 0.659\nsamples = 124\nvalue = [39, 50, 35]\nclass = class_1", fillcolor="#e5fcef"] ;
+1 [label="flavanoids <= 1.235\ngini = 0.477\nsamples = 79\nvalue = [0, 48, 31]\nclass = class_1", fillcolor="#b9f6d2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="malic_acid <= 1.17\ngini = 0.121\nsamples = 31\nvalue = [0, 2, 29]\nclass = class_2", fillcolor="#8a47e7"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = class_1", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 29\nvalue = [0, 0, 29]\nclass = class_2", fillcolor="#8139e5"] ;
+2 -> 4 ;
+5 [label="color_intensity <= 6.425\ngini = 0.08\nsamples = 48\nvalue = [0, 46, 2]\nclass = class_1", fillcolor="#42e686"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 46\nvalue = [0, 46, 0]\nclass = class_1", fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = class_2", fillcolor="#8139e5"] ;
+5 -> 7 ;
+8 [label="od280/od315_of_diluted_wines <= 2.255\ngini = 0.239\nsamples = 45\nvalue = [39, 2, 4]\nclass = class_0", fillcolor="#e99356"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 4\nvalue = [0, 0, 4]\nclass = class_2", fillcolor="#8139e5"] ;
+8 -> 9 ;
+10 [label="color_intensity <= 3.435\ngini = 0.093\nsamples = 41\nvalue = [39, 2, 0]\nclass = class_0", fillcolor="#e68743"] ;
+8 -> 10 ;
+11 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = class_1", fillcolor="#39e581"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 39\nvalue = [39, 0, 0]\nclass = class_0", fillcolor="#e58139"] ;
+10 -> 12 ;
+}
